@@ -73,7 +73,7 @@ class TinyMceFontAwesome {
 	 * @param $objPage
 	 * @param $objLayout
 	 */
-	public function hookGetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, \PageRegular $objPageRegular)
+	public function hookGetPageLayout(\PageModel $objPage, \LayoutModel $objLayout, $objPageRegular)
 	{
 		if($objLayout->tinyMceFontAwesome) {
 			$GLOBALS['TL_CSS']['TinyMceFontAwesome'] = $GLOBALS['TL_FONTAWESOME_CSS'];
